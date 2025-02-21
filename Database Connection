@@ -1,0 +1,22 @@
+# must install mysql on designated machine and upload databases there
+
+import mysql.connector
+
+mydb = mysql.connector.connect(
+  host="localhost",
+  user="sample_username",
+  password="sample_password",
+  database="sample_database"
+)
+
+# to select specific row
+
+mycursor = mydb.cursor()
+
+mycursor.execute("SELECT * FROM sample_database")
+
+result = mycursor.fetchall()
+
+# returns tuple of data within a row
+# looping through this row and returning the information to specific text boxes within webpage will pull the information to the correct spot
+# will require error handling
