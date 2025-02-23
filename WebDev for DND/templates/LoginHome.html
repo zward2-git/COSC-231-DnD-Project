@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel = "stylesheet" href = "{{url_for('static', filename = 'CSS/LoginStyle.css')}}">
+</head>
+<body>
+    <h2 id = "HelloTXT">Hello, {{user}}.</h2>
+
+    <div id = "loginGroup">
+        <h3>Please login here:  </h3> 
+
+        <label for = "usersname" id = "userlab">Username: </label>
+        <input type = "text" id = "username">
+        <br>
+
+        <label for = "password" id = "passlab">Password:  </label>
+        <input type = "text" id = "password">
+
+        <br> <br>
+        <button id = "loginButt" class = "button">Login</button>
+        <h4 id = "loginMess"></h4>
+    </div>
+
+<script 
+    type="text/javascript" 
+    src="{{url_for('static', filename='LoginHome.js')}}"
+    ></script>
+</body>
+</html>
