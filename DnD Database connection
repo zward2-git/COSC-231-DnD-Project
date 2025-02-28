@@ -1,2 +1,6 @@
 import mysql.connector
 
+def make_connection():
+  connection = mysql.connector.connect(
+    host = 
+
