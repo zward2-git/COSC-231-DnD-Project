@@ -1,3 +1,5 @@
+// need to install my-sql-connector
+
 import mysql.connector
 
 // this function initializes the database into this code file
@@ -78,6 +80,31 @@ def display_data():
   consumables_data = get_consumables_data()
   monsters_data = get_monsters_data()
   spells_data = get_spells_data()
+
+print("Equipment data: ")
+for row in equipment_data:
+  print(row)
+
+print("Armor and Shields data: ")
+for row in armor_shields_data:
+  print(row)
+
+print("Weapons: ")
+for row in weapons_data:
+  print(row)
+
+print("Consumables: ")
+for row in consumables_data:
+  print(row)
+
+print("Monsters: ")
+for row in monsters_data:
+  print(row)
+
+print("Spells: ")
+for row in spells_data:
+  print(row)
+  
 
   
 
