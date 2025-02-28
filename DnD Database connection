@@ -1,5 +1,6 @@
 import mysql.connector
 
+// this function initializes the database into this code file
 def make_connection():
   connection = mysql.connector.connect(
     host = "sample_host"
@@ -7,6 +8,7 @@ def make_connection():
   )
   return connection
 
+// the below functions gather the data from the databases
 def get_equipment_data():
   connection = create_connection()
   cursor = connection.cursor(dictionary=True)
@@ -66,6 +68,8 @@ def get_spells_data():
   cursor.close()
   connection.close()
   return spells_data
+
+//the below functions will begin initializing the data
 
 def display_data():
   equipment_data = get_equipment_data()
