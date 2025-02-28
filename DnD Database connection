@@ -2,5 +2,83 @@ import mysql.connector
 
 def make_connection():
   connection = mysql.connector.connect(
-    host = 
+    host = "sample_host"
+    database = "dnd_database"
+  )
+  return connection
+
+def get_equipment_data():
+  connection = create_connection()
+  cursor = connection.cursor(dictionary=True)
+  query = "SELECT * FROM equipment"
+  cursor.execute(query)
+  equipment_data = cursor.fetchall()
+  cursor.close()
+  connection.close()
+  return equipment_data
+
+def get_armor_shields_data():
+  connection = create_connection()
+  cursor = connection.cursor(dictionary=True)
+  query = "SELECT * FROM armor_shields"
+  cursor.execute(query)
+  armor_shields_data = cursor.fetchall()
+  cursor.close()
+  connection.close()
+  return armor_shields_data
+
+def get_weapons_data():
+  connection = create_connection()
+  cursor = connection.cursor(dictionary=True)
+  query = "SELECT * FROM weapons"
+  cursor.execute(query)
+  weapons_data = cursor.fetchall()
+  cursor.close()
+  connection.close()
+  return weapons_data
+
+def get_consumables_data():
+  connection = create_connection()
+  cursor = connection.cursor(dictionary=True)
+  query = "SELECT * FROM consumables"
+  cursor.execute(query)
+  consumables_data = cursor.fetchall()
+  cursor.close()
+  connection.close()
+  return consumables_data
+
+def get_monsters_data():
+  connection = create_connection()
+  cursor = connection.cursor(dictionary=True)
+  query = "SELECT * FROM monsters"
+  cursor.execute(query)
+  monsters_data = cursor.fetchall()
+  cursor.close()
+  connection.close()
+  return monsters_data
+
+def get_spells_data():
+  connection = create_connection()
+  cursor = connection.cursor(dictionary=True)
+  query = "SELECT * FROM spells"
+  cursor.execute(query)
+  spells_data = cursor.fetchall()
+  cursor.close()
+  connection.close()
+  return spells_data
+
+def display_data():
+  equipment_data = get_equipment_data()
+  armor_shields_data = get_armor_shields_data()
+  weapons_data = get_weapons_data()
+  consumables_data = get_consumables_data()
+  monsters_data = get_monsters_data()
+  spells_data = get_spells_data()
+
+  
+
+
+
+
+
 
