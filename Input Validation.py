@@ -15,11 +15,11 @@ def get_info():
   result = []
 
   cursor = connection.cursor()
-  cursor.execute("SELECT * FROM your_table")
+  cursor.execute("SELECT * FROM table")
   
   for i[0] in cursor.description:
-    cursor.execute(f'SELECT * FROM sample_database WHERE {i} = {input}')
-    result.append(mycursor.fetchall())
+    cursor.execute(f'SELECT * FROM table WHERE {i} = {input}')
+    result.append(cursor.fetchall())
 
   for row in result:
     print(row)
