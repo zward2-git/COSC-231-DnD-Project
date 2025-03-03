@@ -1,5 +1,30 @@
+# FIXME: Will eventually line it up with the database, but these variable names will work for now
+
 import random
 import re
+import mysql.connector
+
+def make_connection():
+    connection = mysql.connector.connect(
+        host="sample_host",
+        user="your_user",
+        password="your_password",
+        database="dnd_database")
+    return connection
+
+def get_spell_damage(spell_name):
+    connection = make_connection()
+    cursor = connection.cursor(dictionary=True)
+    query = "SELECT * FROM spells WHERE name = %s"
+    cursor.execute(query, (spell_name,))
+    spell_data = cursor.fetchone()
+    cursor.close()
+    connection.close()
+
+    if spell_data:
+        return spell_data['damage']
+    else:
+        return None
 
 def roll_dice(dice_input):
     # extract dice info
@@ -25,8 +50,17 @@ def roll_dice(dice_input):
     
     return f"Rolls: {rolls}\nModifier: {modifier if modifier else 0}\nTotal: {total}"
 
+def roll_spell_damage(spell_name):
+    spell_damage = get_spell_damage(spell_name)
+
+    if spell_damage:
+        print(f"Rolling damage for {spell_name}: {spell_damage}")
+        result = roll_dice(spell_damage)
+        print(result)
+    else:
+        print(f"Spell {spell_name} not found in the database.")
+
 # ill make this run on command line eventually
 if __name__ == "__main__":
-    dice_input = input("Enter dice to roll (e.g., '2d20 + 3'): ")
-    result = roll_dice(dice_input)
-    print(result)
+    spell_name = input("Enter the spell name: ")
+    roll_spell_damage(spell_name)
