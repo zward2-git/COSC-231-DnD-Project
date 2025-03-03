@@ -1,0 +1,28 @@
+#homeButton {
+    font-family : Arial;
+    padding : 20px, 20px;
+}
+#pageTitle {
+    font-family : Arial;
+    text-align : center;
+}
+
+.collapse {
+    cursor: pointer;
+    font-weight: bold;
+    color: hsl(252, 100%, 50%);
+    border: none;
+    background: none;
+    text-align: left;
+    outline: none;
+    font-size: 1.25em;
+    font-family : Arial;
+}
+.list {
+    margin: 10px 0;
+    padding-left: 20px;
+    font-family : Arial;
+}
+.button {
+    cursor : pointer;
+}

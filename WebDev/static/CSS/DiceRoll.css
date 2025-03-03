@@ -1,0 +1,34 @@
+#homeButton {
+    font-family : Arial;
+    padding : 20px, 20px;
+}
+#pageTitle {
+    font-family : Arial;
+    text-align : center;
+    font-size : 3.25em;
+}
+#diceButtons{
+    position : absolute;
+    left : 50%;
+    transform : translate(-50%);
+}
+#advantageCheck{
+    font-size : 1.25em;
+    font-family : Arial;
+    position : absolute;
+    left : 90%;
+    top : 90%;
+    transform : translate(-10%, -10%);
+}
+
+
+.button{
+    padding: 20px, 20px;
+    cursor : pointer;
+    font-size : 1.5em;
+}
+.diceNumber{
+    font-family : Arial;
+    font-size : 6em;
+    text-align : center;
+}

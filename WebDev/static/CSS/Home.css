@@ -1,0 +1,20 @@
+#buttons {
+    position : absolute;
+    top : 50%;
+    left : 50%;
+    transform : translate(-50%, -50%);
+    text-align : center;
+}
+#homeTitle {
+    text-align : center;
+    font-family : Arial;
+}
+
+.button {
+    padding : 20px, 20px;
+    font-size : 1.25em;
+    font-family : Arial;
+    cursor : pointer;
+    --background-color : rgb(147, 127, 248);
+    --color : rgb(19, 0, 113);
+}

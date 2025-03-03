@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Roller</title>
+    <link rel = "stylesheet" href = "{{url_for('static', filename = 'CSS/DiceRoll.css')}}">
+</head>
+<body>
+    <button id = "homeButton" onclick = redirectToPage("{{url_for('views.home')}}")>Home</button>
+
+    <h1 id = "pageTitle">Dice Roller</h1>
+
+    <div id = "diceButtons">
+        <button id = "d100" class = "button">D100</button>
+        <button id = "d20" class = "button">D20</button>
+        <button id = "d12" class = "button">D12</button>
+        <button id = "d10" class = "button">D10</button>
+        <button id = "d8" class = "button">D8</button>
+        <button id = "d6" class = "button">D6</button>
+        <button id = "d4" class = "button">D4</button>
+    </div>
+
+    <br>
+
+    <h1 id = "diceNum" class = "diceNumber">0</h1>
+
+    <h1 id = "advantageDice" class = "diceNumber"></h1>
+
+    <div id = "advantageCheck">
+        <input type = "checkbox" id = "check">Advantage</input>
+    </div>
+
+    <script type = "text/javascript" src = "{{url_for('static', filename = 'DiceRoll.js')}}"></script>
+</body>
+</html>

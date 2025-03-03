@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spells</title>
+    <link rel = "stylesheet" href = "{{url_for('static', filename = 'CSS/Spells.css')}}">
+</head>
+<body>
+    <button id = "homeButton" onclick = redirectToPage("{{url_for('views.home')}}")>Home</button>
+
+    <h1 id = "pageTitle">Spells</h1>
+
+
+    <script type = "text/javascript" src = "{{url_for('static', filename = 'Spells.js')}}"></script>
+</body>
+</html>
