@@ -20,7 +20,7 @@ def roll_dice(dice_input):
     
     # modifier
     if modifier:
-        modifier = int(modifier.replace(" ", "")
+        modifier = int(modifier.replace(" ", ""))
         total += modifier
     
     return f"Rolls: {rolls}\nModifier: {modifier if modifier else 0}\nTotal: {total}"
