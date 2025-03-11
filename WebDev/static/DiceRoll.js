@@ -7,7 +7,7 @@ const advantageCheck = document.getElementById("check");
 const diceNum = document.getElementById("diceNum");
 const advantageNum = document.getElementById("advantageDice");
 
-//NOT WORKING FULLY RN GO AWAY
+//INSERTS AND REMOVES ADVANTAGE DICE
 advantageCheck.onclick = function(){
     if (advantageCheck.checked){
         advantageNum.textContent = "0";
@@ -15,3 +15,7 @@ advantageCheck.onclick = function(){
         advantageNum.textContent = "";
     }
 }
+
+//DIC NUMBER BUTTON STUFF HERE
+
+//ROLL BUTTON STUFF HERE

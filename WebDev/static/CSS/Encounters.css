@@ -6,3 +6,21 @@
     font-family : Arial;
     text-align : center;
 }
+#initiatives {
+    font-family : Arial;
+    font-size : 1.05em;
+}
+
+
+aside {
+    border : 1px solid #ccc; 
+    padding : 10px; 
+    width : 200px;
+    background-color : #f9f9f9; 
+    font-family : Arial;
+    text-align : center;
+}
+textarea {
+    width : 96%; 
+    resize : none; 
+}

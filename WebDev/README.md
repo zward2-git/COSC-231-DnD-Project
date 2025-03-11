@@ -27,21 +27,19 @@ STEPS TO DO :
 
     > Integration of python, html, and javascript for proper user interaction
 
-    > Spells page content
-
-    > Encounters page content
-
     > Characters page content
+
+    > Spell page database search and insertion
 
     > Page styles
 
 STEPS IN PROGRESS :
 
-    > Dice Roll page content
+    > Encounters page content
 
-    > Dice roll advantage functionality (won't do functionality of dice cuz someone was tasked to do that)
+    > Encounters functionality for info insertion and proper layout
 
-STEPS COMPLETED (not including style cuz its too early for all that) :
+STEPS MOSTLY COMPLETED (not including style cuz its too early for all that) :
 
     > Redirecting buttons on home to each page option
 
@@ -52,6 +50,14 @@ STEPS COMPLETED (not including style cuz its too early for all that) :
     > Drop down menus that allows appending to lists in inventory
 
     > Inventory page content
+
+    > Dice Roll page content
+
+    > Dice roll advantage functionality (won't do functionality of dice cuz someone was tasked to do that)
+
+    > Spells page content
+
+    > Spells list functionality similar to inventory page for spells
 
 
 
@@ -70,4 +76,4 @@ To view in working dev webpage :
         python -m pip install flask
         python -m flask run
 
-if this does not work it is most definently my fault somehow :D
+if this does not work just run app.py and views.py and you should be able to use the environment if flask is installed and refresh the page to reset the environment (I don't know why or when to use each of these seperate strategies but please try the one above first as you'll need some of these things open and running anyways)

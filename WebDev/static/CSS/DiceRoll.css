@@ -7,12 +7,12 @@
     text-align : center;
     font-size : 3.25em;
 }
-#diceButtons{
+#diceButtons {
     position : absolute;
     left : 50%;
     transform : translate(-50%);
 }
-#advantageCheck{
+#advantageCheck {
     font-size : 1.25em;
     font-family : Arial;
     position : absolute;
@@ -20,14 +20,18 @@
     top : 90%;
     transform : translate(-10%, -10%);
 }
+#rollButton {
+    position : absolute;
+    
+}
 
 
-.button{
+.button {
     padding: 20px, 20px;
     cursor : pointer;
     font-size : 1.5em;
 }
-.diceNumber{
+.diceNumber {
     font-family : Arial;
     font-size : 6em;
     text-align : center;
