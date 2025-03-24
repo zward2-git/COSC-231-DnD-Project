@@ -11,12 +11,146 @@
 
     <h1 id = "pageTitle">Encounters</h1>
 
-    <aside>
-        <h3>Initiatives</h3>
-        <textarea id = "initiatives" rows = "25" placeholder = "Combat order notes here"></textarea>
-    </aside>
+    <br>
 
+    <div id = "EncounterInfo">
+        <input type = "text" placeholder = "Encounter name..."> 
+
+        <input type = "text" placeholder = "Difficulty...">
+
+        <input type = "text" placeholder = "XP Value...">
+
+        <input type = "text" placeholder = "Location...">
+    </div>
+
+    <br>
+
+    <div class = "container">
+       <aside>
+            <h3>Initiatives</h3>
+            <textarea class = "initiatives" rows = "25" placeholder = "Combat order notes here"></textarea>
+        </aside>
+
+        <div class = "abilityScores" id = "abilityRow1">
+            <div class = "scoreContain">
+                <label for = "STR">STR</label>
+                <input type = "number" id = "STR" class = "score">
+            </div>
+
+            <br>
+
+            <div class = "scoreContain">
+                <label for = "DEX">DEX</label>
+                <input type = "number" id = "DEX" class = "score">
+            </div>
+
+            <br>
+
+            <div class = "scoreContain">
+                <label for = "CON">CON</label>
+                <input type = "number" id = "CON" class = "score">
+            </div>
+        </div>
+        <br><br>
+        <div class = "abilityScores" id = "abilityRow2">
+            <div class = "scoreContain">
+                <label for = "INT">INT</label>
+                <input type = "number" id = "INT" class = "score">
+            </div>
+
+            <br>
+
+            <div class = "scoreContain">
+                <label for = "WIS">WIS</label>
+                <input type = "number" id = "WIS" class = "score">
+            </div>
+
+            <br>
+
+            <div class = "scoreContain">
+                <label for = "CHA">CHA</label>
+                <input type = "number" id = "CHA" class = "score">
+            </div>
+        </div>
+        <br><br>
+        <div class = "abilityScores" id = "abilityRow3">
+            <div class = "scoreContain">
+                <label for = "Speed">Speed</label>
+                <input type = "number" id = "Speed" class = "score">
+            </div>
+
+            <br>
     
+            <div class = "scoreContain">
+                <label for = "Initiative">Initiative</label>
+                <input type = "number" id = "Initiative" class = "score">
+             </div>
+    
+            <br>
+    
+             <div class = "scoreContain">
+                 <label for = "AC">AC</label>
+                 <input type = "number" id = "AC" class = "score">
+            </div>
+        </div>
+
+        <div id = "hitPoints">
+            <div class = "HPbox">
+                <label for = "HP01">HP #1</label>
+                <input type = "number" id = "HP01" class = "HP">
+            </div>
+
+            <br>
+
+            <div class = "HPbox">
+                <label for = "HP02">HP #2</label>
+                <input type = "number" id = "HP02" class = "HP">
+            </div>
+
+            <br>
+
+            <div class = "HPbox">
+                <label for = "HP03">HP #3</label>
+                <input type = "number" id = "HP03" class = "HP">
+            </div>
+        </div>
+
+        <div id = "attacksFeatures">
+        
+            
+            <label for = "attacks">Attacks</label>
+            <textarea id = "attacks" placeholder = "Write attack info here..."></textarea>
+            
+            <!-- IGNORE THIS!!!!
+
+            <label for = "attackBox">Attacks</label>
+            <div id = "attackBox">
+                <ul id = "attack" class = "list">
+                    <li>Attack</li>
+                    <li><button id = "attackButton" class = "button">Add item</button>
+                        <input id = "newAttack"></li>       
+                </ul>
+
+                <ul id = "bonus" class = "list">
+                    <li>Bonus</li>
+                    <li>--</li>
+                </ul>
+
+                <ul id = "damage" class = "list">
+                    <li>Damage/Type</li>
+                    <li>--</li>
+                </ul>
+            </div>
+            -->
+
+            <br>
+
+            
+            <label for = "features">Features</label> 
+            <textarea id = "features" placeholder = "Write combat features here..."></textarea>
+            
+        </div>
+    </div>
 
     <script type = "text/javascript" src = "{{url_for('static', filename = 'Encounters.js')}}"></script>
 </body>

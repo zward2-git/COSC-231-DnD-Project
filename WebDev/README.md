@@ -23,11 +23,9 @@ FILE CONTENTS :
 
 STEPS TO DO :
 
-    > Add functionality in pages
+    > Add full functionality in all pages
 
     > Integration of python, html, and javascript for proper user interaction
-
-    > Characters page content
 
     > Spell page database search and insertion
 
@@ -35,9 +33,9 @@ STEPS TO DO :
 
 STEPS IN PROGRESS :
 
-    > Encounters page content
+    > Characters page content
 
-    > Encounters functionality for info insertion and proper layout
+    > Encounters attack insertion functionality
 
 STEPS MOSTLY COMPLETED (not including style cuz its too early for all that) :
 
@@ -58,6 +56,10 @@ STEPS MOSTLY COMPLETED (not including style cuz its too early for all that) :
     > Spells page content
 
     > Spells list functionality similar to inventory page for spells
+
+    > Encounters page content
+
+    > Encounters partial functionality for info insertion and proper layout
 
 
 

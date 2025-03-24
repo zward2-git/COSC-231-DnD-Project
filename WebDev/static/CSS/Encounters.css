@@ -1,3 +1,4 @@
+/*basic page stuff*/
 #homeButton {
     font-family : Arial;
     padding : 20px, 20px;
@@ -6,21 +7,157 @@
     font-family : Arial;
     text-align : center;
 }
-#initiatives {
+.container {
+    display : flex;
+    margin-top : 20px;
+    width : 100%;
+}
+#EncounterInfo {
+    text-align : center;
     font-family : Arial;
-    font-size : 1.05em;
+    display : flex;
+    justify-content : space-evenly;
 }
 
 
+
+/*for initiative stuff*/
 aside {
-    border : 1px solid #ccc; 
+    border : 1px solid #cccccc; 
     padding : 10px; 
     width : 200px;
     background-color : #f9f9f9; 
     font-family : Arial;
     text-align : center;
+    margin-right : 40px;
+    margin-left : 5px;
 }
-textarea {
+.initiatives {
     width : 96%; 
     resize : none; 
+    background: repeating-linear-gradient(
+        to bottom,
+        white,
+        white 29px,
+        #e0e0e0 29px,
+        #e0e0e0 30px,
+    );
+    background-attachment: local;
 }
+
+/*for ability score stuff*/
+.score {
+    width : 90px;
+    height : 90px;
+    text-align : center;
+    font-size : x-large;
+    font-family : Arial;
+    display : flex;
+}
+.scoreContain{
+    display : flex;
+    flex-direction : column;
+    margin-right : 40px;
+    flex : 1;
+    margin-top : 20px;
+}
+#abilityRow1 {
+    font-family : Arial;
+    flex-wrap : wrap;
+}
+#abilityRow2 {
+    font-family : Arial;
+    flex-wrap : wrap;
+}
+#abilityRow3 {
+    font-family : Arial;
+    flex-wrap : wrap;
+    border : 1px solid #cccccc; 
+    padding : 10px;
+    width : 100px;
+    background-color : #f9f9f9; 
+}
+
+
+label {
+    margin-bottom : 5px;
+    font-family : Arial;
+}
+
+/*for hit point stuff*/
+.HPbox{
+    display : flex;
+    flex-direction : column;
+    margin-right : 40px;
+    flex : 1;
+    margin-top : 20px;
+}
+.HP {
+    width : 90px;
+    height : 90px;
+    text-align : center;
+    font-size : x-large;
+    font-family : Arial;
+    display : flex;
+}
+#hitPoints {
+    margin-left : 40px;
+}
+
+/*attacks and features stuff*/
+#attacks {
+    width : 95%; 
+    resize : none; 
+    height : 43%;
+    margin-bottom : 10px;
+}
+#attackBox {
+    width : 620px;
+    min-height : 43%;
+    max-height : 43%;
+    overflow-x : hidden;       
+    background-color : #f9f9f9;
+    border : 1px solid #cccccc; 
+    border-radius : 5px;
+}
+
+
+#features {
+    width : 95%; 
+    resize : none; 
+    height : 43%;
+}
+#attacksFeatures {
+    border : 1px solid #cccccc; 
+    padding : 5px; 
+    width : 700px;
+    background-color : #f9f9f9; 
+    font-family : Arial;
+    text-align : center;
+}
+
+.list {
+    font-family : Arial;
+    font-size : 0.6em;
+}
+
+ul {
+    float: left;
+}
+  ul > li {
+    width : 6em;
+}
+li {
+    list-style-type : none;
+    width : 100px;
+}
+.list {
+    font-family : Arial;
+    font-size : small;
+}
+
+/*
+#newAttack {
+    width : 100px;
+}
+*/
