@@ -13,11 +13,22 @@
 
     <div class = "container">
         <div class = "card">
-            <button id = "addButton"><img src = "images/plusSign.png" alt = "Add"></button>
-            <h4 class = "characterName">Add New Character</h4>
-            <div class = "description">
-                <p>Character description here...</p>
-            </div>
+            <button id = "addButton">+</button>
+            <h4 class = "charName">Add New Character</h4>
+        </div>
+    </div>
+
+    <div class = "charPopUp" id = "popUp">
+        <div class = "popUp-content">
+            <span class = "close" id = "closeButton">&times;</span>
+            <h2 id = "newCharTitle">New Character</h2>
+            <br>
+            <input type = "file" id = "charPic">
+            <br>
+            <input id = "newName" placeholder = "Character Name...">
+            <br>
+            <textarea id = "newCharInfo" placeholder="Enter Character info..."></textarea>
+            <button id = "submit">Create Character</button>
         </div>
     </div>
 
