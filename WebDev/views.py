@@ -19,7 +19,7 @@ def spells():
 @views.route("/characters")
 def characters():
     return render_template("Characters.html")
-
+    
     '''inventory page'''
 @views.route("/inventory")
 def inventory():

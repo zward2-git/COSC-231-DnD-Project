@@ -1,11 +1,15 @@
 /*basic page stuff*/
 #homeButton {
-    font-family : Arial;
-    padding : 20px, 20px;
+    border : none;
+    background : none;
+    padding : 0;
+    cursor : pointer;
 }
 #pageTitle {
-    font-family : Arial;
+    font-family : Garamond;
     text-align : center;
+    font-size : 3em;
+    color : rgba(19, 0, 110);
 }
 .container {
     display : flex;
@@ -23,11 +27,13 @@
 
 /*for initiative stuff*/
 aside {
-    border : 1px solid #cccccc; 
+    border : 3px solid rgba(19, 0, 110);
+    border-radius : 5px;    
     padding : 10px; 
     width : 200px;
-    background-color : #f9f9f9; 
-    font-family : Arial;
+    background-color :  rgb(173, 157, 255);
+    font-family : Garamond;
+    color : rgba(19, 0, 110);
     text-align : center;
     margin-right : 40px;
     margin-left : 5px;
@@ -71,17 +77,22 @@ aside {
 }
 #abilityRow3 {
     font-family : Arial;
+    text-align : center;
     flex-wrap : wrap;
-    border : 1px solid #cccccc; 
+    border : 3px solid rgba(19, 0, 110);
+    border-radius : 5px;
     padding : 10px;
     width : 100px;
-    background-color : #f9f9f9; 
+    background-color :  rgb(173, 157, 255);
 }
 
 
 label {
     margin-bottom : 5px;
-    font-family : Arial;
+    font-family : Garamond;
+    text-align : center;
+    color : rgba(19, 0, 110);
+    font-size : large;
 }
 
 /*for hit point stuff*/
@@ -116,8 +127,8 @@ label {
     min-height : 43%;
     max-height : 43%;
     overflow-x : hidden;       
-    background-color : #f9f9f9;
-    border : 1px solid #cccccc; 
+    background-color :  rgb(173, 157, 255);
+    border : 3px solid rgba(19, 0, 110);
     border-radius : 5px;
 }
 
@@ -128,14 +139,19 @@ label {
     height : 43%;
 }
 #attacksFeatures {
-    border : 1px solid #cccccc; 
+    border : 3px solid rgba(19, 0, 110);
+    border-radius : 5px;    
     padding : 5px; 
     width : 700px;
-    background-color : #f9f9f9; 
+    background-color :  rgb(173, 157, 255);
     font-family : Arial;
     text-align : center;
 }
+body {
+    background-color : rgb(180, 191, 255);
+}
 
+ /*
 .list {
     font-family : Arial;
     font-size : 0.6em;
@@ -156,7 +172,6 @@ li {
     font-size : small;
 }
 
-/*
 #newAttack {
     width : 100px;
 }

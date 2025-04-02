@@ -1,12 +1,35 @@
 #homeButton {
-    font-family : Arial;
-    padding : 20px, 20px;
+    border : none;
+    background : none;
+    padding : 0;
+    cursor : pointer;
 }
 #pageTitle {
-    font-family : Arial;
+    font-family : Garamond;
     text-align : center;
-    font-size : 3.25em;
+    font-size : 3em;
+    color : rgba(19, 0, 110);
 }
+body {
+    background-color : rgb(180, 191, 255);
+}
+.button {
+    padding : 20px, 20px;
+    font-size : 1.50em;
+    font-family : Georgia, 'Times New Roman', Times, serif;
+    cursor : pointer;
+    --color : rgba(19, 0, 110);
+    border-radius : 5px;
+    border-width : 5px;
+    border-color :  rgba(19, 0, 110);
+    background-color : rgb(204, 211, 252);
+}
+.button:hover { 
+    background-color : rgba(19, 0, 110);
+    color : aliceblue;
+    --border-color : aliceblue;
+}
+
 #diceButtons {
     position : absolute;
     left : 50%;
@@ -14,15 +37,17 @@
 }
 #advantageCheck {
     font-size : 1.25em;
-    font-family : Arial;
+    font-family : Georgia, 'Times New Roman', Times, serif;
     position : absolute;
     left : 90%;
     top : 90%;
     transform : translate(-10%, -10%);
 }
 #rollButton {
-    position : absolute;
-    
+    position : relative;
+    margin-bottom : 20px;
+    left : 50%;
+    transform : translate(-50%);
 }
 
 

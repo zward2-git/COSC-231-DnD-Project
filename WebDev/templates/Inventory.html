@@ -7,14 +7,18 @@
     <link rel = "stylesheet" href = "{{url_for('static', filename = 'CSS/Inventory.css')}}">
 </head>
 <body>
-    <button id = "homeButton" class = "button" onclick = redirectToPage("{{url_for('views.home')}}")>Home</button>
-    
+    <button id = "homeButton" onclick = redirectToPage("{{url_for('views.home')}}")>
+        <img src = "links/Home.png" alt = "Home">
+    </button>
+
     <h1 id = "pageTitle">Inventory</h1>
+
+    <br><br>
 
     <details>
         <summary class = "collapse">Armor</summary>
         <ul id = "armorList" class = "list">
-            <li><input id = "newArmor">
+            <li><input id = "newArmor" class = "newIn">
                 <button id = "armorButton" class = "button">Add item</button></li>       
              </ul>
     </details>
@@ -24,7 +28,7 @@
     <details>
         <summary class = "collapse">Weapons</summary>
         <ul id = "weaponList" class = "list">
-            <li><input id = "newWeapon">
+            <li><input id = "newWeapon" class = "newIn">
                 <button id = "weaponButton" class = "button">Add item</button></li>
             </ul>
     </details>
@@ -34,7 +38,7 @@
     <details>
         <summary class = "collapse">Consumables</summary>
         <ul id = "consumableList" class = "list">
-            <li><input id = "newConsumable">
+            <li><input id = "newConsumable" class = "newIn">
                 <button id = "consumableButton" class = "button">Add item</button></li>       
              </ul>
     </details>
@@ -44,7 +48,7 @@
     <details>
         <summary class = "collapse">Gear</summary>
         <ul id = "gearList" class = "list">
-            <li><input id = "newGear">
+            <li><input id = "newGear" class = "newIn">
                 <button id = "gearButton" class = "button">Add item</button></li>
         </ul>
     </details>
@@ -56,15 +60,15 @@
         <ul id = "wealthList" class = "list">
             
             <li id = "gold"> 0 Gold pieces</li>
-                <li><input id = "newGold">
+                <li><input id = "newGold" class = "newIn">
                     <button id = "goldButton" class = "button">Add Gold</button></li>
             
             <li id = "silver"> 0 Silver pieces</li>
-                <li><input id = "newSilver">
+                <li><input id = "newSilver" class = "newIn">
                     <button id = "silverButton" class = "button">Add Silver</button></li>
            
             <li id = "copper"> 0 Copper pieces</li>
-                <li><input id = "newCopper">
+                <li><input id = "newCopper" class = "newIn">
                      <button id = "copperButton" class = "button">Add Copper</button></li>
         </ul>
     </details>
@@ -74,7 +78,7 @@
     <details>
         <summary class = "collapse">Tools</summary>
         <ul id = "toolsList" class = "list">
-            <li><input id = "newTools">
+            <li><input id = "newTools" class = "newIn">
                 <button id = "toolsButton" class = "button">Add item</button></li>
         </ul>
     </details>
@@ -84,7 +88,7 @@
     <details>
         <summary class = "collapse">Misc</summary>
         <ul id = "miscList" class = "list">
-            <li><input id = "newMisc">
+            <li><input id = "newMisc" class = "newIn">
                 <button id = "miscButton" class = "button">Add item</button></li>
         </ul>
     </details>

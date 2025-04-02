@@ -29,13 +29,13 @@ STEPS TO DO :
 
     > Spell page database search and insertion
 
-    > Page styles
+    > Characters page content if we so decide
 
 STEPS IN PROGRESS :
 
-    > Characters page content
-
     > Encounters attack insertion functionality
+    
+    > Page styles
 
 STEPS MOSTLY COMPLETED (not including style cuz its too early for all that) :
 
@@ -60,6 +60,8 @@ STEPS MOSTLY COMPLETED (not including style cuz its too early for all that) :
     > Encounters page content
 
     > Encounters partial functionality for info insertion and proper layout
+
+    > Commented out Characters page for now 
 
 
 

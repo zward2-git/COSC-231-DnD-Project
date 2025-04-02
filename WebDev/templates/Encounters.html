@@ -7,20 +7,35 @@
     <link rel = "stylesheet" href = "{{url_for('static', filename = 'CSS/Encounters.css')}}">
 </head>
 <body>
-    <button id = "homeButton" onclick = redirectToPage("{{url_for('views.home')}}")>Home</button>
+    <button id = "homeButton" onclick = redirectToPage("{{url_for('views.home')}}")>
+        <img src = "links/Home.png" alt = "Home">
+    </button>
 
     <h1 id = "pageTitle">Encounters</h1>
 
     <br>
 
     <div id = "EncounterInfo">
-        <input type = "text" placeholder = "Encounter name..."> 
 
-        <input type = "text" placeholder = "Difficulty...">
+        <div>
+            <label for = "enc">Encounter</label>
+            <input type = "text" id = "enc" placeholder = "Enter encounter name..."> 
+        </div>
 
-        <input type = "text" placeholder = "XP Value...">
+        <div>
+            <label for = "dif">Difficulty</label>
+            <input type = "text" id = "dif" placeholder = "Encounter difficulty...">
+        </div>
 
-        <input type = "text" placeholder = "Location...">
+        <div>
+            <label for = "xp">XP</label>
+            <input type = "text" id = "xp" placeholder = "Encounter XP Value...">
+        </div>
+
+        <div>
+            <label for = "loc">Location</label>
+            <input type = "text" id = "loc" placeholder = "Encounter location...">
+        </div>
     </div>
 
     <br>

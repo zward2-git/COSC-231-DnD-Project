@@ -7,7 +7,9 @@
     <link rel = "stylesheet" href = "{{url_for('static', filename = 'CSS/Spells.css')}}">
 </head>
 <body>
-    <button id = "homeButton" onclick = redirectToPage("{{url_for('views.home')}}")>Home</button>
+    <button id = "homeButton" onclick = redirectToPage("{{url_for('views.home')}}")>
+        <img src = "links/Home.png" alt = "Home">
+    </button>
     
     <br>
 
@@ -19,13 +21,13 @@
 
     <div id = "columnNames">
         <div class = "inner">
-            <p class = "names" id = "newSpell">Spell</p>
-            <p class = "names" id = "newLevel">Level</p>
-            <p class = "names" id = "newCast">Casting Time</p>
-            <p class = "names" id = "newDuration">Duration</p>
-            <p class = "names" id = "newRange">Range</p>
-            <p class = "names" id = "newSave">Attack/Save</p>
-            <p class = "names" id = "newAffect">Damage/Affect</p>
+            <p class = "names" id = "newSpell"><b>Spell</b></p>
+            <p class = "names" id = "newLevel"><b>Level</b></p>
+            <p class = "names" id = "newCast"><b>CastTime</b></p>
+            <p class = "names" id = "newDuration"><b>Duration</b></p>
+            <p class = "names" id = "newRange"><b>Range</b></p>
+            <p class = "names" id = "newSave"><b>Attack/Save</b></p>
+            <p class = "names" id = "newAffect"><b>Damage/Affect</b></p>
         </div>
     </div>
 

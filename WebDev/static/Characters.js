@@ -27,6 +27,7 @@ const submit = document.getElementById("submit");
 const charInfo = document.getElementById("newCharInfo");
 const name = document.getElementById("newName");
 const pic = document.getElementById("charPic")
+const container =  document.getElementById("container");
 
 submit.onclick = function() {
     popUp.style.display = "none";
@@ -37,8 +38,11 @@ submit.onclick = function() {
     let newName = document.createElement("h4");
     newName.className = "charName";
     newName.textContent = name.value;
+    name.value = "";
+
+    charInfo.value = "";
     
     newChar.appendChild(newName);
 
-    document.getElementById("container").appendChild(newChar);
+   container.appendChild(newChar);
 }

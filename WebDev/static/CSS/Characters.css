@@ -15,8 +15,6 @@
     width : 200px;
     height : 250px;
     background-color : #f9f9f9;
-    flex : 1;
-    justify-self : center;
 }
 #addButton {
     width : 200px;
