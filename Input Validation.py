@@ -178,7 +178,7 @@ def get_info_monsters():
     result = []
   
     cursor = connection.cursor()
-    column_names = ['name', 'size', 'type', 'alignment', 'armor_class', 'armor_type', 'hit_points', 'hit_dice', 'hit_points_roll', 'speed_walk', 
+    column_names = ['id', 'name', 'size', 'type', 'alignment', 'armor_class', 'armor_type', 'hit_points', 'hit_dice', 'hit_points_roll', 'speed_walk', 
                     'strength', 'dexterity', 'constitution', 'intelligence', 'wisdom', 'charisma', 'saving_throws', 'damage_vulnerabilities', 
                     'damage_resistances', 'damage_immunities', 'condition_immunities', 'darkvision', 'passive_perception', 'languages', 'challenge_rating',
                     'proficiency_bonus', 'xp', 'special_abilities', 'actions', 'legendary_actions', 'image_url']
@@ -215,6 +215,38 @@ def get_info_spells():
     cursor = connection.cursor()
     column_names = ['id', 'name', 'level', 'school', 'casting_time', 'range', 'duration', 'description', 'components',
                     'concentration', 'ritual', 'attack_type', 'damage', 'higher_level', 'classes', 'subclasses']
+    
+    #combine all queries into one
+    for column in column_names:
+      query = " OR ".join(f'{column} LIKE %s')
+    full_query = f"SELECT * FROM table WHERE {query}"
+    column_parameters = tuple([user_input] * len(column_names))
+    
+    cursor.execute(full_query, parameters)
+    result.append(cursor.fetchall())
+  
+    if result:
+      for row in result:
+        print(row)
+    else:
+      print("No matching records found.")
+
+  except:
+    print("An error occurred")
+
+  finally:
+    cursor.close()
+    connection.close()
+
+def get_info_magic_items():
+
+  try:
+    user_input = input_validation()
+    connection = make_connection()
+    result = []
+  
+    cursor = connection.cursor()
+    column_names = ['id', 'name', 'category', 'rarity', 'description', 'image_url']
     
     #combine all queries into one
     for column in column_names:
