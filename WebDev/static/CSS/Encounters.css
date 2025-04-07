@@ -119,7 +119,7 @@ label {
 #attacks {
     width : 95%; 
     resize : none; 
-    height : 43%;
+    height : 42%;
     margin-bottom : 10px;
 }
 #attackBox {
@@ -136,7 +136,7 @@ label {
 #features {
     width : 95%; 
     resize : none; 
-    height : 43%;
+    height : 42%;
 }
 #attacksFeatures {
     border : 3px solid rgba(19, 0, 110);
@@ -149,6 +149,14 @@ label {
 }
 body {
     background-color : rgb(180, 191, 255);
+}
+input {
+    border : 3px solid rgba(19, 0, 110);
+    border-radius : 5px;  
+}
+textarea {
+    border : 3px solid rgba(19, 0, 110);
+    border-radius : 5px;  
 }
 
  /*
