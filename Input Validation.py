@@ -221,8 +221,7 @@ def get_info_spells():
     results = cursor.fetchall()
   
     if result:
-      for row in result:
-        print(row)
+      return results
     else:
       print("No matching records found.")
 
