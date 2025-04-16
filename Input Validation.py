@@ -51,7 +51,7 @@ def get_info_equipment():
     result = []
   
     cursor = connection.cursor()
-    column_names = ['id', 'name', 'type', 'description', 'weight', 'value', 'spell_effect', 'rarity', 'attunement']
+    column_names = ['id', 'name', 'type', 'description', 'weight', 'cost', 'tags']
     
     #combine all queries into one
     query = " OR ".join(f'{column} LIKE %s' for column in column_names)
@@ -82,7 +82,7 @@ def get_info_armor_shields():
     result = []
   
     cursor = connection.cursor()
-    column_names = ['id', 'name', 'armor_class', 'type', 'weight', 'value', 'properties', 'strength_requireemnt', 'stealth_disadvantage', 'max_dex_bonus']
+    column_names = ['id', 'type', 'name', 'AC', 'strength', 'stealth', 'weight', 'cost', 'don_time', 'doff_time']
     
     #combine all queries into one
     query = " OR ".join(f'{column} LIKE %s' for column in column_names)
@@ -113,7 +113,7 @@ def get_info_weapons():
     result = []
   
     cursor = connection.cursor()
-    column_names = ['id', 'name', 'damage', 'damage_type', 'weapon_type', 'range', 'weight', 'value', 'properties', 'handedness', 'ammunition_type']
+    column_names = ['id', 'name', 'type', 'cost', 'damage', 'weight', 'properties']
     
     #combine all queries into one
     query = " OR ".join(f'{column} LIKE %s' for column in column_names)
