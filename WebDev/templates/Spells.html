@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spells</title>
+    <link rel = "stylesheet" href = "{{url_for('static', filename = 'CSS/Spells.css')}}">
+</head>
+<body>
+    <button id = "homeButton" onclick = redirectToPage("{{url_for('views.home')}}")>
+        <img src = "links/Home.png" alt = "Home">
+    </button>
+    
+    <br>
+
+    <!--
+    <button id = "addButton">Add spell</button>
+-->
+
+    <h1 id = "pageTitle">Spells</h1>
+
+    <div id = "columnNames">
+        <div class = "inner">
+            <p class = "names" id = "newSpell"><b>Spell</b></p>
+            <p class = "names" id = "newLevel"><b>Level</b></p>
+            <p class = "names" id = "newCast"><b>CastTime</b></p>
+            <p class = "names" id = "newDuration"><b>Duration</b></p>
+            <p class = "names" id = "newRange"><b>Range</b></p>
+            <p class = "names" id = "newSave"><b>Attack/Save</b></p>
+            <p class = "names" id = "newAffect"><b>Damage/Affect</b></p>
+        </div>
+    </div>
+
+    <div class = "scrollingBox">
+        <ul class = "list" id = "spells">
+            <li class = "enter">
+                <div id = spellEnter>
+                    <input id = "spellInput"><button id = "addButton">Add</button>
+                </div>
+            </li>
+        </ul>
+        <ul class = "list" id = "levels">
+            <li class = "enter">--</li>
+        </ul>
+        <ul class = "list" id = "casts">
+            <li class = "enter">--</li>
+        </ul>
+        <ul class = "list" id = "durations">
+            <li class = "enter">--</li>
+        </ul>
+        <ul class = "list" id = "ranges">
+            <li class = "enter">--</li>
+        </ul>
+        <ul class = "list" id = "saves">
+            <li class = "enter">--</li>
+        </ul>
+        <ul class = "list" id = "affects">
+            <li class = "enter">--</li>
+        </ul>
+
+    </div>
+
+
+    <script type = "text/javascript" src = "{{url_for('static', filename = 'Spells.js')}}"></script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+#homeButton {
+    border : none;
+    background : none;
+    padding : 0;
+    cursor : pointer;
+}
+#pageTitle {
+    font-family : Garamond;
+    text-align : center;
+    font-size : 3em;
+    color : rgba(19, 0, 110);
+}
+#spellEnter {
+    display : flex;
+}
+#spellInput {
+    border-radius : 5px;
+    border-width : 3px;
+    border-color :  rgba(19, 0, 110);
+}
+#addButton {
+    cursor : pointer;
+    font-size : large;
+    position : relative;
+    left : 20%;
+    border-width : 3px;
+    border-color: rgba(19, 0, 110);
+    color : rgba(19, 0, 110);
+    border-radius : 5px;
+}
+#addButton:hover {
+    color : aliceblue;
+    background-color : rgba(19, 0, 110);
+}
+
+
+.columnNames {
+    position : relative;
+    overflow : hidden;
+}
+.inner {
+    background-color :  rgb(173, 157, 255);
+    border : 3px solid rgba(19, 0, 110);
+    width : fit-content;
+    display : flex;
+    gap : 1rem;
+    flex : 1;
+    border-radius : 5px;
+}
+.names {
+    font-family : Garamond;
+    font-size : 1.25em;
+    color : rgba(19, 0, 110));
+    border-radius : 5px;
+    padding : 10px;   
+    margin-right : 50px;   
+}
+.names:nth-child(1) {
+    margin-right : 260px;
+    margin-left : 50px;
+}
+.names:nth-child(3) {
+    margin-right : 70px;
+}
+.names:nth-child(6) {
+    margin-right : 80px;
+}
+.names:nth-child(7) {
+    margin-right : 130px;
+}
+
+.scrollingBox {
+    flex : 1;  
+    flex-direction : column;
+    min-height : 60vh;
+    max-height : 60vh;
+    overflow-y : auto; 
+    overflow-x : hidden;       
+    background-color : aliceblue;
+    border : 3px solid  rgba(19, 0, 110); 
+    border-radius : 5px;
+    padding : 10px;        
+}
+
+.list {
+    margin-right : 10px;  
+    font-family : Arial;
+    font-size : 1.10em;
+}
+.list:nth-child(1) {
+    margin-right : 210px;
+}
+.list:nth-child(2) {
+    margin-right : 0px;
+}
+.list:nth-child(3) {
+    margin-right : 50px;
+}
+.list:nth-child(6) {
+    margin-right : 60px;
+}
+
+ul {
+    float: left;
+}
+  
+  ul > li {
+    width : 6em;
+}
+li {
+    list-style-type : none;
+    margin-top : 30px;
+    width : 100px;
+}
+body {
+    background-color : rgb(180, 191, 255);
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel = "stylesheet" href = "{{url_for('static', filename = 'CSS/Home.css')}}">
+</head>
+<body>
+    <br><br><br>
+
+    <h1 id = "homeTitle">Dungeons & Numbers</h1>
+
+    <br>
+
+    <div id = "buttons">
+        <!--<button id = "charButton" class = "button" onclick = redirectToPage("{{url_for('views.characters')}}")>Characters</button>-->
+        <button id = "spellButton" class = "button" onclick = redirectToPage("{{url_for('views.spells')}}")>Spells</button>
+        <button id = "invButton" class = "button" onclick = redirectToPage("{{url_for('views.inventory')}}")>Inventory</button>
+
+        <br> <br> 
+
+        <button id = "encButton" class = "button" onclick = redirectToPage("{{url_for('views.encounters')}}")>Encounters</button>
+        <button id = "drButton" class = "button" onclick = redirectToPage("{{url_for('views.diceRoller')}}")>Dice Roller</button>
+    </div>
+
+
+    <script type = "text/javascript" src = "{{url_for('static', filename = 'Home.js')}}"></script>
+</body>
+</html>

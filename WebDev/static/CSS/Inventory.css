@@ -1,0 +1,61 @@
+#homeButton {
+    border : none;
+    background : none;
+    padding : 0;
+    cursor : pointer;
+}
+#pageTitle {
+    font-family : Garamond;
+    text-align : center;
+    font-size : 3em;
+    color : rgba(19, 0, 110);
+}
+
+.collapse {
+    cursor : pointer;
+    font-weight : bold;
+    color : rgba(19, 0, 110);
+    border : 2px solid rgba(19, 0, 110);
+    background : rgb(173, 157, 255);
+    width : 600px;
+    position : relative;
+    left : 50%;
+    transform : translate(-50%);
+    outline : none;
+    font-size : 1.75em;
+    font-family : Garamond;
+}
+.list {
+    font-family : Arial;
+    width : 400px;
+    min-height : 50px;
+    text-align : center;
+    position : relative;
+    left : 50%;
+    transform : translate(-50%);
+}
+.button {
+    cursor : pointer;
+}
+
+li {
+    list-style-type : none;
+}
+ul {
+    background-color : rgb(214, 216, 255);
+    border : 2px solid rgba(19, 0, 110);
+}
+summary {
+    background-color :  rgb(173, 157, 255);
+    border : 3px solid rgba(19, 0, 110);
+    border-radius : 5px;
+}
+
+body {
+    background-color : rgb(180, 191, 255);
+}
+
+
+.newIn {
+    margin-top : 10px;
+}

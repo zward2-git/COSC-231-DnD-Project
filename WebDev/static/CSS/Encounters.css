@@ -1,0 +1,186 @@
+/*basic page stuff*/
+#homeButton {
+    border : none;
+    background : none;
+    padding : 0;
+    cursor : pointer;
+}
+#pageTitle {
+    font-family : Garamond;
+    text-align : center;
+    font-size : 3em;
+    color : rgba(19, 0, 110);
+}
+.container {
+    display : flex;
+    margin-top : 20px;
+    width : 100%;
+}
+#EncounterInfo {
+    text-align : center;
+    font-family : Arial;
+    display : flex;
+    justify-content : space-evenly;
+}
+
+
+
+/*for initiative stuff*/
+aside {
+    border : 3px solid rgba(19, 0, 110);
+    border-radius : 5px;    
+    padding : 10px; 
+    width : 200px;
+    background-color :  rgb(173, 157, 255);
+    font-family : Garamond;
+    color : rgba(19, 0, 110);
+    text-align : center;
+    margin-right : 40px;
+    margin-left : 5px;
+}
+.initiatives {
+    width : 96%; 
+    resize : none; 
+    background: repeating-linear-gradient(
+        to bottom,
+        white,
+        white 29px,
+        #e0e0e0 29px,
+        #e0e0e0 30px,
+    );
+    background-attachment: local;
+}
+
+/*for ability score stuff*/
+.score {
+    width : 90px;
+    height : 90px;
+    text-align : center;
+    font-size : x-large;
+    font-family : Arial;
+    display : flex;
+}
+.scoreContain{
+    display : flex;
+    flex-direction : column;
+    margin-right : 40px;
+    flex : 1;
+    margin-top : 20px;
+}
+#abilityRow1 {
+    font-family : Arial;
+    flex-wrap : wrap;
+}
+#abilityRow2 {
+    font-family : Arial;
+    flex-wrap : wrap;
+}
+#abilityRow3 {
+    font-family : Arial;
+    text-align : center;
+    flex-wrap : wrap;
+    border : 3px solid rgba(19, 0, 110);
+    border-radius : 5px;
+    padding : 10px;
+    width : 100px;
+    background-color :  rgb(173, 157, 255);
+}
+
+
+label {
+    margin-bottom : 5px;
+    font-family : Garamond;
+    text-align : center;
+    color : rgba(19, 0, 110);
+    font-size : large;
+}
+
+/*for hit point stuff*/
+.HPbox{
+    display : flex;
+    flex-direction : column;
+    margin-right : 40px;
+    flex : 1;
+    margin-top : 20px;
+}
+.HP {
+    width : 90px;
+    height : 90px;
+    text-align : center;
+    font-size : x-large;
+    font-family : Arial;
+    display : flex;
+}
+#hitPoints {
+    margin-left : 40px;
+}
+
+/*attacks and features stuff*/
+#attacks {
+    width : 95%; 
+    resize : none; 
+    height : 42%;
+    margin-bottom : 10px;
+}
+#attackBox {
+    width : 620px;
+    min-height : 43%;
+    max-height : 43%;
+    overflow-x : hidden;       
+    background-color :  rgb(173, 157, 255);
+    border : 3px solid rgba(19, 0, 110);
+    border-radius : 5px;
+}
+
+
+#features {
+    width : 95%; 
+    resize : none; 
+    height : 42%;
+}
+#attacksFeatures {
+    border : 3px solid rgba(19, 0, 110);
+    border-radius : 5px;    
+    padding : 5px; 
+    width : 700px;
+    background-color :  rgb(173, 157, 255);
+    font-family : Arial;
+    text-align : center;
+}
+body {
+    background-color : rgb(180, 191, 255);
+}
+input {
+    border : 3px solid rgba(19, 0, 110);
+    border-radius : 5px;  
+}
+textarea {
+    border : 3px solid rgba(19, 0, 110);
+    border-radius : 5px;  
+}
+
+ /*
+.list {
+    font-family : Arial;
+    font-size : 0.6em;
+}
+
+ul {
+    float: left;
+}
+  ul > li {
+    width : 6em;
+}
+li {
+    list-style-type : none;
+    width : 100px;
+}
+.list {
+    font-family : Arial;
+    font-size : small;
+}
+
+#newAttack {
+    width : 100px;
+}
+*/

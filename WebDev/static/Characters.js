@@ -1,0 +1,48 @@
+
+function redirectToPage(target){
+    window.location.href = target;
+}
+
+//pop up stuff
+const popUp = document.getElementById("popUp");
+const addButton = document.getElementById("addButton");
+const span = document.getElementById("closeButton");
+
+addButton.onclick = function() {
+    popUp.style.display = "block";
+}
+
+span.onclick = function() {
+    popUp.style.display = "none";
+}
+
+window.onclick = function(event) {
+    if (event.target == popUp) {
+        popUp.style.display = "none";
+    }
+}
+
+//new charcter insertion
+const submit = document.getElementById("submit");
+const charInfo = document.getElementById("newCharInfo");
+const name = document.getElementById("newName");
+const pic = document.getElementById("charPic")
+const container =  document.getElementById("container");
+
+submit.onclick = function() {
+    popUp.style.display = "none";
+
+    let newChar = document.createElement("div");
+    newChar.className = "card";
+
+    let newName = document.createElement("h4");
+    newName.className = "charName";
+    newName.textContent = name.value;
+    name.value = "";
+
+    charInfo.value = "";
+    
+    newChar.appendChild(newName);
+
+   container.appendChild(newChar);
+}

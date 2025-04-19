@@ -1,0 +1,39 @@
+#buttons {
+    position : absolute;
+    top : 50%;
+    left : 50%;
+    transform : translate(-50%, -50%);
+    text-align : center;
+    font-size : 1.75em;
+}
+#homeTitle {
+    text-align : center;
+    font-family : Garamond;
+    font-size : 4.25em;
+    position : absolute;
+    top : 20%;
+    left : 50%;
+    transform : translate(-50%, -50%);
+    color : rgba(19, 0, 110);
+}
+
+.button {
+    padding : 20px, 20px;
+    font-size : 1.50em;
+    font-family : Georgia, 'Times New Roman', Times, serif;
+    cursor : pointer;
+    --color : rgba(19, 0, 110);
+    border-radius : 5px;
+    border-width : 5px;
+    border-color :  rgba(19, 0, 110);
+    background-color : rgb(204, 211, 252);
+}
+.button:hover { 
+    background-color : rgba(19, 0, 110);
+    color : aliceblue;
+    --border-color : aliceblue;
+}
+
+body {
+    background-color : rgb(180, 191, 255);
+}
