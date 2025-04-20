@@ -25,8 +25,6 @@ STEPS TO DO :
 
     > Add full functionality in all pages
 
-    > Integration of python, html, and javascript for proper user interaction
-
     > Spell page database search and insertion
 
     > Characters page content if we so decide
@@ -34,8 +32,8 @@ STEPS TO DO :
 STEPS IN PROGRESS :
 
     > Encounters attack insertion functionality
-    
-    > Page styles
+
+    > Integration of python, html, and javascript for proper user interaction
 
 STEPS MOSTLY COMPLETED (not including style cuz its too early for all that) :
 
@@ -62,6 +60,8 @@ STEPS MOSTLY COMPLETED (not including style cuz its too early for all that) :
     > Encounters partial functionality for info insertion and proper layout
 
     > Commented out Characters page for now 
+        
+    > Page styles
 
 
 
