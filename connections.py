@@ -1,3 +1,13 @@
+import mysql.connector
+
+def make_connection():
+  mydb = mysql.connector.connect(
+    host="localhost",
+    user="sample_username",
+    password="sample_password",
+    database="sample_database"
+  )
+
 def input_validation():
   user_input = input().strip()
 
