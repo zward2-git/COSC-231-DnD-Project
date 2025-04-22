@@ -72,8 +72,7 @@ def get_info_equipment():
     results = cursor.fetchall()
   
     if result:
-      for row in result:
-        print(row)
+      return results
     else:
       print("No matching records found.")
 
@@ -103,8 +102,7 @@ def get_info_armor_shields():
     results = cursor.fetchall()
   
     if result:
-      for row in result:
-        print(row)
+      return results
     else:
       print("No matching records found.")
 
@@ -134,8 +132,7 @@ def get_info_weapons():
     results = cursor.fetchall()
   
     if result:
-      for row in result:
-        print(row)
+      return results
     else:
       print("No matching records found.")
 
@@ -165,8 +162,7 @@ def get_info_consumables():
     results = cursor.fetchall()
   
     if result:
-      for row in result:
-        print(row)
+      return results
     else:
       print("No matching records found.")
 
@@ -199,8 +195,7 @@ def get_info_monsters():
     results = cursor.fetchall()
   
     if result:
-      for row in result:
-        print(row)
+      return results
     else:
       print("No matching records found.")
 
@@ -261,8 +256,7 @@ def get_info_magic_items():
     results = cursor.fetchall()
   
     if result:
-      for row in result:
-        print(row)
+      return results
     else:
       print("No matching records found.")
 
