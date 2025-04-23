@@ -49,33 +49,44 @@ def diceRoller():
 def equipment():
      data = request.get_json()
      equipment = data.get('equipmentInput')
-     #result = python function
+     #result = [python function]
      #return jsonify({'result' : result})
 
 @views.route("/api/armordata" methods = ['GET'])
 def armor():
     data = request.get_json()
     armor = data.get('armorInput')
-    #result = python function 
+    #result = [python function] 
     #return jsonify({'result' : result})
 
 @views.route("/api/weapondata" methods = ['GET'])
 def weapon():
     data = request.get_json()
     weapon = data.get('weaponInput')
-    #result = python function 
+    #result = [python function] 
     #return jsonify({'result' : result})
 
 @views.route("/api/consumabledata" methods = ['GET'])
 def consumable():
     data = request.get_json()
     consumable = data.get('consumableInput')
-    #result = python function 
+    #result = [python function] 
     #return jsonify({'result' : result})
 
 @views.route("/api/spelldata" methods = ['GET'])
 def spell():
     data = request.get_json()
     spell = data.get('spellInput')
-    #result = python function 
+    #result = [python function] 
+    #return jsonify({'result' : result})
+
+
+'''route to the diceroller function'''
+
+@views.route("/api/rollingdice" methods = ['GET'])
+def roll():
+    data = request.get_json()
+    dice = data.get('diceInput')
+    num = data.get('numDice')
+    #result = [python function]
     #return jsonify({'result' : result})

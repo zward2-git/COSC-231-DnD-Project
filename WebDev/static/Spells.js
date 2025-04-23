@@ -28,11 +28,20 @@ add.onclick = function() {
     if (newSpell.trim() !== "") {
         let newEntry = document.createElement("li");
 
+        //this will fetch the python function
+       fetch('/api/spelldata')
+            .then(response => response.json())
+            .then(data => {
+                let newSpellData = `Result:${data.result}`;
+            })
+
         newEntry.textContent = newSpell;
         spells.append(newEntry);
 
+        //this for now until we get data array working
         let noEntry = document.createElement("li");
         noEntry.textContent = "--";
+
 
         levels.append(noEntry.cloneNode(true));
 

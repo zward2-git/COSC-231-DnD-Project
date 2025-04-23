@@ -35,6 +35,10 @@ body {
     left : 50%;
     transform : translate(-50%);
 }
+#numDice {
+    width : 15px;
+    height : 15px;
+}
 #advantageCheck {
     font-size : 1.25em;
     font-family : Georgia, 'Times New Roman', Times, serif;
