@@ -27,6 +27,7 @@ add.onclick = function() {
 
     if (newSpell.trim() !== "") {
         let newEntry = document.createElement("li");
+        let newSpellEntry = document.createElement("li");
 
         //this will fetch the python function
        fetch('/api/spelldata')
@@ -35,8 +36,56 @@ add.onclick = function() {
                 let newSpellData = `Result:${data.result}`;
             })
 
+            /*
+        newSpellEntry.textContent = newSpellData[#]; //POSSIBLE FOR IF WE USE AN ARRAY FOR ONE 
+        spells.append(newSpellEntry);
+
+
+        let newLevelEntry = document.createElement("li");
+
+        newLevelEntry.textContent = newSpellData[#];  
+        spells.append(newLevelEntry);
+
+        
+        let newLevelEntry = document.createElement("li");
+
+        newLevelEntry.textContent = newSpellData[#];  
+        levels.append(newLevelEntry);
+
+
+        let newCastEntry = document.createElement("li");
+
+        newCastEntry.textContent = newSpellData[#];  
+        casts.append(newCastEntry);
+
+
+        let newDurationEntry = document.createElement("li");
+
+        newDurationEntry.textContent = newSpellData[#];  
+        durations.append(newDurationEntry);
+
+
+        let newRangeEntry = document.createElement("li");
+
+        newRangeEntry.textContent = newSpellData[#];  
+        ranges.append(newRangeEntry);
+
+
+        let newSaveEntry = document.createElement("li");
+
+        newSaveEntry.textContent = newSpellData[#];  
+        saves.append(newSaveEntry);
+
+
+        let newAffectEntry = document.createElement("li");
+
+        newAffectEntry.textContent = newSpellData[#];  
+        affects.append(newAffectEntry);
+        */
+
         newEntry.textContent = newSpell;
         spells.append(newEntry);
+        
 
         //this for now until we get data array working
         let noEntry = document.createElement("li");

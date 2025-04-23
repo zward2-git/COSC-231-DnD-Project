@@ -20,8 +20,22 @@ armorButton.onclick = function() {
 
     if (newArmor.trim() !== "") {
 
+        fetch('/api/armordata')
+            .then(response => response.json())
+            .then(data => {
+            let newArmorData = `Result:${data.result}`;
+        })
+
+        /*MIGHT HAVE TO ADD SOMETHING FOR THE REST OF THE DATA 
+        BUT MAINLY TRYING TO JUST GET THE RIGHT THINGS ON THE PAGE
+        let newItem = document.createElement("li");
+        newItem.textContent = newArmorData[#];
+        */
+
+//COMMENT OUT BELLOW WHEN FETCH STATEMENTS ARE DONE
         let newItem = document.createElement("li");
         newItem.textContent = newArmor;
+//UP TO HERE ONLY 
 
         armorList.append(newItem);
 
@@ -44,9 +58,21 @@ weaponButton.onclick = function() {
     
     if (newWeapon.trim() !== "") {
 
+        fetch('/api/weapondata')
+            .then(response => response.json())
+            .then(data => {
+            let newWeaponData = `Result:${data.result}`;
+        })
+
+        /*
+        let newItem = document.createElement("li");
+        newItem.textContent = newWeaponData[#];
+        */
+
+//COMMENT OUT BELLOW WHEN FETCH STATEMENTS ARE DONE
         let newItem = document.createElement("li");
         newItem.textContent = newWeapon;
-
+//UPTO HERE
         weaponList.append(newItem);
 
         weaponInput.value = "";
@@ -69,8 +95,21 @@ consumableButton.onclick = function() {
     
     if (newConsumable.trim() !== "") {
 
+        fetch('/api/consumabledata')
+            .then(response => response.json())
+            .then(data => {
+            let newConsumableData = `Result:${data.result}`;
+        })
+
+        /*
+        let newItem = document.createElement("li");
+        newItem.textContent = newConsumableData[#];
+        */
+
+//COMMENT OUT BELLOW WHEN FETCH STATEMENTS ARE DONE
         let newItem = document.createElement("li");
         newItem.textContent = newConsumable;
+//UP TO HERE ONLY
 
         consumableList.append(newItem);
 
@@ -94,8 +133,21 @@ consumableButton.onclick = function() {
         
         if (newGear.trim() !== "") {
     
+            fetch('/api/equipmentdata')
+            .then(response => response.json())
+            .then(data => {
+            let newEquipmentData = `Result:${data.result}`;
+        })
+
+        /*
+        let newItem = document.createElement("li");
+        newItem.textContent = newEquipmentData[#];
+        */
+
+//COMMENT OUT BELLOW WHEN FETCH STATEMENTS ARE DONE
             let newItem = document.createElement("li");
             newItem.textContent = newGear;
+//UP TO HERE ONLY
     
             gearList.append(newItem);
     
@@ -176,7 +228,9 @@ consumableButton.onclick = function() {
         }
     }
 
-    //tools function
+    //MAGIC ITEMS function
+        //I REPEAT THIS IS FOR MAGIC ITEMS CODE SAYS TOOLS BUT IT IS MAGIC ITEMS
+    //ONE MORE FUCKING TIME! THIS IS MAGIC ITEMS
     const toolsInput = document.getElementById("newTools");
     const toolsButton = document.getElementById("toolsButton");
     const toolsList = document.getElementById("toolsList");
@@ -187,9 +241,22 @@ consumableButton.onclick = function() {
         
         if (newTools.trim() !== "") {
     
+            fetch('/api/magicdata')
+            .then(response => response.json())
+            .then(data => {
+            let newMagicData = `Result:${data.result}`;
+        })
+
+        /*
+        let newItem = document.createElement("li");
+        newItem.textContent = newMagicData[#];
+        */
+
+//COMMENT OUT BELLOW WHEN FETCH STATEMENTS ARE DONE
             let newItem = document.createElement("li");
             newItem.textContent = newTools;
-    
+//UP TO HERE ONLY
+
             toolsList.append(newItem);
     
             toolsInput.value = "";
@@ -201,6 +268,8 @@ consumableButton.onclick = function() {
     }
 
     //misc function
+//LEAVING AS IS FOR ITEMS WE DONT HAVE IN DATABASE
+    //ANNOYINGLY TOO MUCH WORK TO DELETE AND IM LAZY
     const miscInput = document.getElementById("newMisc");
     const miscButton = document.getElementById("miscButton");
     const miscList = document.getElementById("miscList");
