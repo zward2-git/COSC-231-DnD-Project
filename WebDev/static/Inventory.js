@@ -26,16 +26,13 @@ armorButton.onclick = function() {
             let newArmorData = `Result:${data.result}`;
         })
 
-        /*MIGHT HAVE TO ADD SOMETHING FOR THE REST OF THE DATA 
-        BUT MAINLY TRYING TO JUST GET THE RIGHT THINGS ON THE PAGE
         let newItem = document.createElement("li");
-        newItem.textContent = newArmorData[#];
-        */
-
-//COMMENT OUT BELLOW WHEN FETCH STATEMENTS ARE DONE
+        newItem.textContent = newArmorData[1];
+        
+/*
         let newItem = document.createElement("li");
         newItem.textContent = newArmor;
-//UP TO HERE ONLY 
+*/
 
         armorList.append(newItem);
 
@@ -64,15 +61,15 @@ weaponButton.onclick = function() {
             let newWeaponData = `Result:${data.result}`;
         })
 
-        /*
+        
         let newItem = document.createElement("li");
-        newItem.textContent = newWeaponData[#];
-        */
+        newItem.textContent = newWeaponData[1];
+        
 
-//COMMENT OUT BELLOW WHEN FETCH STATEMENTS ARE DONE
+/*
         let newItem = document.createElement("li");
         newItem.textContent = newWeapon;
-//UPTO HERE
+*/
         weaponList.append(newItem);
 
         weaponInput.value = "";
@@ -101,15 +98,15 @@ consumableButton.onclick = function() {
             let newConsumableData = `Result:${data.result}`;
         })
 
-        /*
+        
         let newItem = document.createElement("li");
-        newItem.textContent = newConsumableData[#];
-        */
+        newItem.textContent = newConsumableData[1];
+        
 
-//COMMENT OUT BELLOW WHEN FETCH STATEMENTS ARE DONE
+/*
         let newItem = document.createElement("li");
         newItem.textContent = newConsumable;
-//UP TO HERE ONLY
+*/
 
         consumableList.append(newItem);
 
@@ -139,15 +136,15 @@ consumableButton.onclick = function() {
             let newEquipmentData = `Result:${data.result}`;
         })
 
-        /*
+        
         let newItem = document.createElement("li");
-        newItem.textContent = newEquipmentData[#];
-        */
+        newItem.textContent = newEquipmentData[1];
+        
 
-//COMMENT OUT BELLOW WHEN FETCH STATEMENTS ARE DONE
+/*
             let newItem = document.createElement("li");
             newItem.textContent = newGear;
-//UP TO HERE ONLY
+*/
     
             gearList.append(newItem);
     
@@ -247,15 +244,15 @@ consumableButton.onclick = function() {
             let newMagicData = `Result:${data.result}`;
         })
 
-        /*
+        
         let newItem = document.createElement("li");
-        newItem.textContent = newMagicData[#];
-        */
+        newItem.textContent = newMagicData[1];
+        
 
-//COMMENT OUT BELLOW WHEN FETCH STATEMENTS ARE DONE
+/*
             let newItem = document.createElement("li");
             newItem.textContent = newTools;
-//UP TO HERE ONLY
+*/
 
             toolsList.append(newItem);
     
