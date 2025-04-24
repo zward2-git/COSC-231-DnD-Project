@@ -3,11 +3,7 @@ function redirectToPage(target){
     window.location.href = target;
 }
 
-//FUNCTION TO ADD NEW SPELL TO LIST WILL ONLY DO THIS BY SPELL NAME SO THAT WE
-//CAN ADD SEARCH FROM AND DATABASE TO AUTO FILL OTHER INFO 
-
-//WILL NEED TO COME BACK FOR INSERTION FUNCTIONALITY
-
+//FUNCTION TO ADD NEW SPELL TO LIST WILL ONLY DO THIS BY SPELL NAME 
 const add = document.getElementById("addButton");
 
 const spellInput = document.getElementById("spellInput");
@@ -36,62 +32,56 @@ add.onclick = function() {
                 let newSpellData = `Result:${data.result}`;
             })
 
-            /*
-        newSpellEntry.textContent = newSpellData[#]; //POSSIBLE FOR IF WE USE AN ARRAY FOR ONE 
+            
+        newSpellEntry.textContent = newSpellData[1]; //POSSIBLE FOR IF WE USE AN ARRAY FOR ONE 
         spells.append(newSpellEntry);
-
-
-        let newLevelEntry = document.createElement("li");
-
-        newLevelEntry.textContent = newSpellData[#];  
-        spells.append(newLevelEntry);
 
         
         let newLevelEntry = document.createElement("li");
 
-        newLevelEntry.textContent = newSpellData[#];  
+        newLevelEntry.textContent = newSpellData[2];  
         levels.append(newLevelEntry);
 
 
         let newCastEntry = document.createElement("li");
 
-        newCastEntry.textContent = newSpellData[#];  
+        newCastEntry.textContent = newSpellData[4];  
         casts.append(newCastEntry);
 
 
         let newDurationEntry = document.createElement("li");
 
-        newDurationEntry.textContent = newSpellData[#];  
+        newDurationEntry.textContent = newSpellData[6];  
         durations.append(newDurationEntry);
 
 
         let newRangeEntry = document.createElement("li");
 
-        newRangeEntry.textContent = newSpellData[#];  
+        newRangeEntry.textContent = newSpellData[5];  
         ranges.append(newRangeEntry);
 
 
         let newSaveEntry = document.createElement("li");
 
-        newSaveEntry.textContent = newSpellData[#];  
+        newSaveEntry.textContent = newSpellData[11];  
         saves.append(newSaveEntry);
 
 
         let newAffectEntry = document.createElement("li");
 
-        newAffectEntry.textContent = newSpellData[#];  
+        newAffectEntry.textContent = newSpellData[12];  
         affects.append(newAffectEntry);
-        */
+        
 
         newEntry.textContent = newSpell;
         spells.append(newEntry);
         
-
+        /*
         //this for now until we get data array working
         let noEntry = document.createElement("li");
         noEntry.textContent = "--";
 
-
+        
         levels.append(noEntry.cloneNode(true));
 
         casts.append(noEntry.cloneNode(true));
@@ -106,6 +96,7 @@ add.onclick = function() {
 
         spellInput.value = "";
         console.log("New spell added.");
+        */
 
     } else {
         alert("Enter valid spell.");
