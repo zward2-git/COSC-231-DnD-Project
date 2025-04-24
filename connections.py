@@ -1,4 +1,5 @@
 import mysql.connector
+import json
 
 def make_connection():
   mydb = mysql.connector.connect(
@@ -69,13 +70,11 @@ def get_info_equipment():
     column_parameters = tuple([f'%{user_input}%' for column in column_names])
     
     cursor.execute(full_query, column_parameters)
-    results = cursor.fetchall()
-  
-    if result:
-      return results
-    else:
-      print("No matching records found.")
+    record = cursor.fetchone()
+    result = json.dumps(record)
 
+    return result
+ 
   except:
     print("An error occurred")
 
@@ -99,13 +98,11 @@ def get_info_armor_shields():
     column_parameters = tuple([user_input] * len(column_names))
     
     cursor.execute(full_query, column_parameters)
-    results = cursor.fetchall()
-  
-    if result:
-      return results
-    else:
-      print("No matching records found.")
+    record = cursor.fetchone()
+    result = json.dumps(record)
 
+    return result
+ 
   except:
     print("An error occurred")
 
@@ -129,13 +126,11 @@ def get_info_weapons():
     column_parameters = tuple([user_input] * len(column_names))
     
     cursor.execute(full_query, column_parameters)
-    results = cursor.fetchall()
-  
-    if result:
-      return results
-    else:
-      print("No matching records found.")
+    record = cursor.fetchone()
+    result = json.dumps(record)
 
+    return result
+ 
   except:
     print("An error occurred")
 
@@ -159,13 +154,11 @@ def get_info_consumables():
     column_parameters = tuple([user_input] * len(column_names))
     
     cursor.execute(full_query, column_parameters)
-    results = cursor.fetchall()
-  
-    if result:
-      return results
-    else:
-      print("No matching records found.")
+    record = cursor.fetchone()
+    result = json.dumps(record)
 
+    return result
+ 
   except:
     print("An error occurred")
 
@@ -192,13 +185,11 @@ def get_info_monsters():
     column_parameters = tuple([user_input] * len(column_names))
     
     cursor.execute(full_query, column_parameters)
-    results = cursor.fetchall()
-  
-    if result:
-      return results
-    else:
-      print("No matching records found.")
+    record = cursor.fetchone()
+    result = json.dumps(record)
 
+    return result
+ 
   except:
     print("An error occurred")
 
@@ -223,13 +214,11 @@ def get_info_spells():
     column_parameters = tuple([user_input] * len(column_names))
     
     cursor.execute(full_query, column_parameters)
-    results = cursor.fetchall()
-  
-    if result:
-      return results
-    else:
-      print("No matching records found.")
+    record = cursor.fetchone()
+    result = json.dumps(record)
 
+    return result
+ 
   except:
     print("An error occurred")
 
@@ -253,13 +242,11 @@ def get_info_magic_items():
     column_parameters = tuple([user_input] * len(column_names))
     
     cursor.execute(full_query, column_parameters)
-    results = cursor.fetchall()
-  
-    if result:
-      return results
-    else:
-      print("No matching records found.")
+    record = cursor.fetchone()
+    result = json.dumps(record)
 
+    return result
+ 
   except:
     print("An error occurred")
 
