@@ -8,6 +8,7 @@ def make_connection():
     password="sample_password",
     database="sample_database"
   )
+  return mydb
 
 def input_validation():
   user_input = input().strip()
