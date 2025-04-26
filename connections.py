@@ -78,6 +78,34 @@ def get_info_armor_shields():
     cursor.close()
     connection.close()
 
+def get_info_consumables():
+
+  try:
+    user_input = input_validation()
+    connection = make_connection()
+    result = []
+
+    cursor = connection.cursor()
+    column_names = ['id', 'name', 'effect', 'duration', 'value', 'uses', 'restores', 'rarity']
+
+    #combine all queries into one
+    query = " OR ".join(f'{column} LIKE %s' for column in column_names)
+    full_query = f"SELECT * FROM table WHERE {query}"
+    column_parameters = tuple([user_input] * len(column_names))
+
+    cursor.execute(full_query, column_parameters)
+    record = cursor.fetchone()
+    result = json.dumps(record)
+
+    return result
+ 
+  except:
+    print("An error occurred")
+
+  finally:
+    cursor.close()
+    connection.close()
+
 def get_info_weapons():
 
   try:
