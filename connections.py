@@ -19,39 +19,6 @@ def input_validation():
   except ValueError:
       return f"%{user_input.lower()}%"
 
-'''
-def get_info():
-
-  try:
-    user_input = input_validation()
-    connection = make_connection()
-    result = []
-  
-    cursor = connection.cursor()
-    cursor.execute("SELECT * FROM table LIMIT 1")
-    column_names = [desc[0] for desc in cursor.description]
-    
-    for column in column_names:
-      query = f"SELECT * FROM table WHERE {column.lower()} LIKE %s"
-      cursor.execute(query, (user_input,))
-      results = cursor.fetchall()
-  
-    if result:
-      for row in result:
-        print(row)
-    else:
-      print("No matching records found.")
-
-  except:
-    print("An error occurred")
-
-  finally:
-    cursor.close()
-    connection.close()
-    
-  return
-'''
-
 #will likely need to customize one per table for efficiency
 #have a list of column names prepared and combine them into one query
 
@@ -67,7 +34,7 @@ def get_info_equipment():
     
     #combine all queries into one
     query = " OR ".join(f'{column} LIKE %s' for column in column_names)
-    full_query = f"SELECT * FROM table WHERE {query}"
+    full_query = f"SELECT * FROM equipment WHERE {query}"
     column_parameters = tuple([f'%{user_input}%' for column in column_names])
     
     cursor.execute(full_query, column_parameters)
@@ -95,7 +62,7 @@ def get_info_armor_shields():
     
     #combine all queries into one
     query = " OR ".join(f'{column} LIKE %s' for column in column_names)
-    full_query = f"SELECT * FROM table WHERE {query}"
+    full_query = f"SELECT * FROM armor_shields WHERE {query}"
     column_parameters = tuple([user_input] * len(column_names))
     
     cursor.execute(full_query, column_parameters)
@@ -123,7 +90,7 @@ def get_info_weapons():
     
     #combine all queries into one
     query = " OR ".join(f'{column} LIKE %s' for column in column_names)
-    full_query = f"SELECT * FROM table WHERE {query}"
+    full_query = f"SELECT * FROM weapons WHERE {query}"
     column_parameters = tuple([user_input] * len(column_names))
     
     cursor.execute(full_query, column_parameters)
@@ -139,33 +106,6 @@ def get_info_weapons():
     cursor.close()
     connection.close()
 
-def get_info_consumables():
-
-  try:
-    user_input = input_validation()
-    connection = make_connection()
-    result = []
-  
-    cursor = connection.cursor()
-    column_names = ['id', 'name', 'effect', 'duration', 'value', 'uses', 'restores', 'rarity']
-    
-    #combine all queries into one
-    query = " OR ".join(f'{column} LIKE %s' for column in column_names)
-    full_query = f"SELECT * FROM table WHERE {query}"
-    column_parameters = tuple([user_input] * len(column_names))
-    
-    cursor.execute(full_query, column_parameters)
-    record = cursor.fetchone()
-    result = json.dumps(record)
-
-    return result
- 
-  except:
-    print("An error occurred")
-
-  finally:
-    cursor.close()
-    connection.close()
 
 def get_info_monsters():
 
@@ -182,7 +122,7 @@ def get_info_monsters():
     
     #combine all queries into one
     query = " OR ".join(f'{column} LIKE %s' for column in column_names)
-    full_query = f"SELECT * FROM table WHERE {query}"
+    full_query = f"SELECT * FROM monsters WHERE {query}"
     column_parameters = tuple([user_input] * len(column_names))
     
     cursor.execute(full_query, column_parameters)
@@ -211,7 +151,7 @@ def get_info_spells():
     
     #combine all queries into one
     query = " OR ".join(f'{column} LIKE %s' for column in column_names)
-    full_query = f"SELECT * FROM table WHERE {query}"
+    full_query = f"SELECT * FROM spells WHERE {query}"
     column_parameters = tuple([user_input] * len(column_names))
     
     cursor.execute(full_query, column_parameters)
@@ -239,7 +179,7 @@ def get_info_magic_items():
     
     #combine all queries into one
     query = " OR ".join(f'{column} LIKE %s' for column in column_names)
-    full_query = f"SELECT * FROM table WHERE {query}"
+    full_query = f"SELECT * FROM magic_items WHERE {query}"
     column_parameters = tuple([user_input] * len(column_names))
     
     cursor.execute(full_query, column_parameters)
