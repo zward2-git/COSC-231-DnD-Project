@@ -167,6 +167,8 @@ def get_info_monsters():
     connection.close()
 
 def get_info_spells():
+    connection = None
+    cursor = None
 
   try:
     user_input = input_validation()
@@ -186,14 +188,30 @@ def get_info_spells():
     record = cursor.fetchone()
     result = json.dumps(record)
 
-    return result
- 
-  except:
-    print("An error occurred")
+        cursor = connection.cursor()
+        column_names = ['id', 'name', 'level', 'school', 'casting_time', 'range', 'duration', 'description', 'components',
+                        'concentration', 'ritual', 'attack_type', 'damage', 'higher_level', 'classes', 'subclasses']
+        
+        query = " OR ".join(f'{column} LIKE %s' for column in column_names)
+        full_query = f"SELECT * FROM table WHERE {query}"
+        column_parameters = tuple([user_input] * len(column_names))
+        
+        cursor.execute(full_query, column_parameters)
+        record = cursor.fetchone()
+        result = json.dumps(record)
 
-  finally:
-    cursor.close()
-    connection.close()
+        return result
+
+    except Exception as e:
+        print(f"An error occurred: {e}")
+        return None
+
+    finally:
+        if cursor:
+            cursor.close()
+        if connection:
+            connection.close()
+
 
 def get_info_magic_items():
 

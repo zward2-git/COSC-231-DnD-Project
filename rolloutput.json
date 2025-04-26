@@ -1,0 +1,12 @@
+{
+    "input_type": "manual",
+    "dice_expression": "2d6+3",
+    "roll_result": {
+        "rolls": [
+            2,
+            4
+        ],
+        "modifier": 3,
+        "total": 9
+    }
+}
